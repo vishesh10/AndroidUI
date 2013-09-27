@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="4" >
+	 
+	  <!-- layout for customer details -->
+  
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:background="#1EE500" >				
+       
+               
+        <TextView
+            android:id="@+id/camp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="CAMPAIGN : Campaign One"
+            android:textColor="#EA001B"/>				
+         <TextView
+            android:id="@+id/CONTACT"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="CONTACT DETAILS"
+            android:textColor="#EA001B" />
+          <TextView
+            android:id="@+id/name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="NAME : Ravi Kumar" 
+            android:textColor="#EA001B"/>
+          <TextView
+            android:id="@+id/number"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="MOBILE : 9999123456) "
+            android:textColor="#EA001B" />
+          <TextView
+            android:id="@+id/age"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="AGE : 26" 
+            android:textColor="#EA001B"/>
+   
+    </LinearLayout>
+
+   													 <!-- For script -->
+   													 
+   	 											 
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       	android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#0040AF" >
+          
+        	
+        <TextView
+            android:id="@+id/script"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="7dp"
+            android:text='  	Hi Ravi.Did I catch you at good time? We are marketing company that helps companies like yours with branding,PR and positioning '
+            android:textColor="#FCFCF2"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    
+</LinearLayout>
