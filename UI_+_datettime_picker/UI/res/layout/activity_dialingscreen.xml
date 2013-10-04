@@ -1,0 +1,213 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="4" >
+	 
+	  <!-- layout for customer details -->
+  
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+        android:orientation="vertical"
+        android:background="#1EE500" >				
+       
+               
+        <TextView
+            android:id="@+id/camp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="CAMPAIGN : Campaign One"
+            android:textColor="#EA001B"/>				
+         <TextView
+            android:id="@+id/contact"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="CONTACT DETAILS"
+            android:textColor="#EA001B" />
+          <TextView
+            android:id="@+id/name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="NAME : Ravi Kumar" 
+            android:textColor="#EA001B"/>
+          <TextView
+            android:id="@+id/number"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="MOBILE : 9999123456 "
+            android:textColor="#EA001B" />
+          <TextView
+            android:id="@+id/age"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="AGE : 26" 
+            android:textColor="#EA001B"/>
+   
+    </LinearLayout>
+
+   													 <!-- For script -->
+   													 
+   	 											 
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+        android:orientation="vertical"
+        android:background="#0040AF" >
+          
+        	
+        <TextView
+            android:id="@+id/script"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            
+            android:text='  	Hi Ravi.Did I catch you at good time? We are marketing company that helps companies like yours with branding,PR and positioning '
+            android:textColor="#FCFCF2"/>
+            <!--  android:textStyle="bold"                   android:textSize="16sp"/>  -->
+
+        <!-- for displaying current date -->    
+        <!--          <TextView
+        	android:id="@+id/tvDate"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text=""
+        	android:textAppearance="?android:attr/textAppearanceLarge" />
+ -->
+    <!-- 	<DatePicker
+        	android:id="@+id/dpResult"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content" />
+    -->
+    </LinearLayout>
+
+    
+    
+    									<!-- For buttons -->
+    									
+    <LinearLayout
+        android:id="@+id/ll3"
+	    android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" 	
+        android:orientation="vertical"
+        android:background="#59543E"
+        android:weightSum="2">							<!-- for dividing button layouts in equal parts -->
+    	  
+    	  <LinearLayout
+    	      android:layout_width="fill_parent"
+    	      android:layout_height="fill_parent"
+    	      android:orientation="horizontal"
+    	      android:layout_weight="1"
+    	      android:weightSum="3">
+    	      
+    	      	  <Button	      
+    	      	      android:id="@+id/NI"
+            		  android:layout_width="wrap_content"
+            		  android:layout_height="fill_parent"
+            		  android:layout_weight="1"
+            		  android:text="NI"/>
+            		  
+    	      	  <Button	      
+    	      	      android:id="@+id/NE"
+            		  android:layout_width="wrap_content"
+            		  android:layout_height="fill_parent"
+            		  android:layout_weight="1"
+            		  android:text="NE"/>
+    
+    			  <Button	      
+    			      android:id="@+id/CB"
+            		  android:layout_width="wrap_content"
+            		  android:layout_height="fill_parent"
+            		  android:layout_weight="1"
+            		  android:text="CB"
+            		  android:onClick="showDateTimeDialog"/>
+    	</LinearLayout>
+
+
+    	  <LinearLayout
+    	      android:layout_width="fill_parent"
+    	      android:layout_height="match_parent"
+    	      android:orientation="horizontal"
+    	      android:layout_weight="1"
+    	      android:weightSum="3">
+				  <Button	      
+    	      	      android:id="@+id/PR"
+            		  android:layout_width="wrap_content"
+            		  android:layout_height="fill_parent"
+            		  android:layout_weight="1"
+            		  android:text="PR"/>
+            		  
+    	      	  <Button	      
+    	      	      android:id="@+id/FU"
+            		  android:layout_width="wrap_content"
+            		  android:layout_height="fill_parent"
+            		  android:layout_weight="1"
+            		  android:text="FU"/>
+    
+    			  <Button	      
+    			      android:id="@+id/LEAD"
+            		  android:layout_width="wrap_content"
+            		  android:layout_height="fill_parent"
+            		  android:layout_weight="1"
+            		  android:text="LEAD"/>
+   		</LinearLayout>
+	</LinearLayout>    	      	     	  
+    	  
+    	  
+	<LinearLayout
+        android:id="@+id/ll4"
+	    android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:background="#4F403F">
+    
+		<RelativeLayout
+		    android:id="@+id/rel1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1">
+		    <ImageButton
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:src="@drawable/play"/>
+		</RelativeLayout>   
+		<RelativeLayout
+		    android:id="@+id/rel2"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1">
+		
+		    <ImageButton
+		        android:id="@+id/rewind"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:src="@drawable/rewind"/>	    
+			
+		    <ImageButton
+		        android:id="@+id/logout"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:src="@drawable/stop"
+		        android:onClick="logout"/>
+		    
+		    <ImageButton
+		        android:id="@+id/forward"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:src="@drawable/forward"/>
+		
+		</RelativeLayout>    
+	</LinearLayout>
+</LinearLayout>
